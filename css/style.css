@@ -1,0 +1,342 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body{
+    background-color : black;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Travail sur le css de ma navbar */
+
+.navbar{
+    background-color : white;
+}
+
+.navbar .container-fluid .navbar-brand{
+    color: black; 
+    font-size: 1.35rem;
+    font-weight : 800;
+}
+
+.navbar .container-fluid .navbar-brand:hover{
+    color: brown; 
+    font-size: 1.35rem;
+}
+
+.navbar .container-fluid .navbarNav .navbar-nav .nav-item{
+    list-style : none;
+}
+
+.navbar .container-fluid .navbarNav .navbar-nav .nav-item .nav-link{
+    text-decoration : none;
+    font-weight : 700;
+    color: black;
+}
+
+.navbar .container-fluid .navbarNav .navbar-nav .nav-item .nav-link:hover{
+    background-color: black;
+    color : white;
+    cursor: pointer; 
+}
+
+/* Fin du travail sur la navbar */
+
+/* Travail sur le main section */
+
+.main-section {
+    background-image: url("../img/portrait/potrait-Homme2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width : 100%;
+    height: 90vh;
+}
+
+section h3, p{
+    color: white;
+}
+
+section span{
+    font-size: 1.5rem;
+    font-weight : 700;
+}
+
+section p{
+    font-size: 1rem;
+    font-weight : 600;
+    text-transform: uppercase;
+}
+
+/* Travail sur le sous-menu */
+
+.list-style{
+    display : flex; 
+}
+
+.list-item{
+    position : relative;
+    list-style: none;
+}
+
+.list-style .list-item .list-link{
+    text-decoration : none;
+    color : white;
+    text-transform : uppercase;
+    font-weight : 700;
+}
+
+.list-item .sous-menu{
+    border-radius: 5px;
+    position : absolute;
+    width : 130%;
+    background-color: black;
+    visibility : hidden;
+}
+
+.list-item .sous-menu .sous-list-style .sous-list-item{
+    display : flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content : center;
+    width : 100%;
+}
+
+.sous-link{
+    color: white;
+    text-decoration : none;
+    margin-bottom : 20px;
+    font-weight : 400;
+    opacity : none;
+}
+
+.sous-list-item .btn{
+    opacity: none;
+}
+
+.sous-list-style{
+    display : inline;
+}
+
+.sous-list-item{
+    list-style : none;
+    display : flex; 
+}
+
+.sous-link:hover{
+    color: brown;
+}
+
+.list-style .list-item:hover > .sous-menu{
+    visibility : visible;
+}
+
+/* Fin du travail sur le sous-menu */
+/* FIn du travail sur le main section */
+
+/* Début du travail sur le about section */
+
+.about-section h2 {
+    color : rgb(134, 135, 137);
+    font-weight : 800;
+    font-size: 3rem;
+}
+
+.about-section img{
+    box-shadow: 10px 10px 5px 0px rgba(55, 55, 55, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(55, 55, 55, 0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(55, 55, 55, 0.75);
+}
+
+.about-section p{
+    color: white;
+}
+
+.progress-barre{
+    background-color:rgba(55, 55, 55, 0.75);
+    display: flex;
+    justify-content : flex-start;
+    align-items: center;
+    position : relative; 
+    border-radius : 50px;
+    height : 38px; 
+    width : 100%;
+}
+
+.barre-value1{
+    background-color: white;
+    border-radius : 50px;
+    height : 38px;
+    width : 0px;
+    animation : load1 3s normal forwards;
+}
+
+.barre-value1 p{
+    color:black;
+    padding : 12px;
+}
+
+.barre-value2{
+    background-color: white;
+    border-radius : 50px;
+    height : 38px;
+    width : 0px;
+    animation : load2 3s normal forwards;
+}
+
+.barre-value2 p{
+    color:black;
+    padding : 12px;
+}
+
+.barre-value3{
+    background-color: white;
+    border-radius : 50px;
+    height : 38px;
+    width : 0px;
+    animation : load3 3s normal forwards;
+}
+
+.barre-value3 p{
+    color:black;
+    padding : 12px;
+}
+
+.barre-value4{
+    background-color: white;
+    border-radius : 50px;
+    height : 38px;
+    width : 0px;
+    animation : load4 3s normal forwards;
+}
+
+.barre-value4 p{
+    color:black;
+    padding : 12px;
+}
+
+
+@keyframes load1 {
+    0%{
+        width : 0%;
+    }
+    100%{
+        width : 80%;
+    }
+}
+
+@keyframes load2 {
+    0%{
+        width : 0%;
+    }
+    100%{
+        width : 70%;
+    }
+}
+
+@keyframes load3 {
+    0%{
+        width : 0%;
+    }
+    100%{
+        width : 40%;
+    }
+}
+
+@keyframes load4 {
+    0%{
+        width : 0%;
+    }
+    100%{
+        width : 50%;
+    }
+}
+
+/* Fin du travail sur la section about us */
+/* Début du travail sur la section services */
+
+.section-services h2{
+    color : white;
+    text-transform: uppercase;
+    font-weight : 700;
+    font-size : 2rem;
+}
+.section-services .cards .card{
+    background-color : white;
+    padding : 40px;
+    margin: 10px;
+    border : none; 
+    outline: none; 
+}
+
+.section-services .cards .card .card-body .circle{
+    width : 70px;
+    height : 70px;
+    background-color : black;
+    color: white; 
+    padding : 12px;
+    font-size : 30px;
+    display : inline-block;
+    margin-bottom : 20px;
+    border-radius : 50%;
+}
+
+.section-services .cards .card .card-body .circle i{
+    font-size : 2rem;
+}
+
+.section-services .cards .card:hover .circle{
+    background-color : white;
+    color: black;
+    border : 2px solid black;
+    cursor: pointer;
+    transition : 0.5s;
+}
+
+.section-services .cards p{
+    color: black;
+}
+
+/* Fin du travail sur la section services */
+/* Début du travail sur la section portfolio */
+
+.portfolio h2{
+    color: white;
+    text-transform : uppercase;
+    font-weight : 700;
+}
+
+.portfolio .control{
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.portfolio .control ul{
+    background-color : white;
+    padding: 15px;
+    border-radius : 5px;
+}
+
+.portfolio .control ul li{
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+.portfolio .control ul li a{
+    text-decoration : none;
+    color : black;
+}
+
+.portfolio .control ul li a:hover{
+    color : white;
+    padding: 15px;
+    border-radius : 5px;
+    background-color: black;
+}
+
+/* Fin du travail sur la section portfolio*/
